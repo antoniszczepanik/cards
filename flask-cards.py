@@ -14,9 +14,8 @@ def index():
 
 @socketio.on('connect')
 def on_connect():
-    """Create a game lobby"""
-    room = 1
-    join_room(room)
+    # Each user visiting website is in the same room
+    join_room(1)
 
 @socketio.on('draw_card')
 def on_draw_card():
