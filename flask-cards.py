@@ -26,10 +26,10 @@ def on_draw_card():
 
 def draw_card():
     suits = {
-        0: 'Pik',
-        1: 'Karo',
-        2: 'Kier',
-        3: 'Trefl'
+        0: '❤️',
+        1: '♠️',
+        2: '♣️',
+        3: '♦️'
     }
     cards = {
         0: 'Ass',
@@ -46,10 +46,9 @@ def draw_card():
         11: 'Królowa',
         12: 'Król'
     }
-    emojis = ['😭', '😇',  '🤠', '🤡',  '🥳 ', '🤫', '🤭']
     x = randint(0,3) #random integer 0 to 3 to pick suit
     y = randint(0,12) #random integer 0 to 12 to pick card
-    return f"{cards[y]} {suits[x]} {choice(emojis)}"
+    return f"{cards[y]} {suits[x]}"
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    socketio.run(app, host='0.0.0.0', port='80', debug=True)
