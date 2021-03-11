@@ -10,7 +10,8 @@ To run it using virtualenv:
 
 ```sh
 python3 -m venv venv
-source vevn/bin/activate
+source venv/bin/activate
 pip3 install requirements.txt
 python3 flask-cards.py
 ```
+The app should be available at `localhost:1234` :) 
