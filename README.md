@@ -14,3 +14,4 @@ source venv/bin/activate
 pip3 install requirements.txt
 python3 flask-cards.py
 ```
+The app should be available at `localhost:1234` :) 
