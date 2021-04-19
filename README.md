@@ -2,7 +2,7 @@
 Simple card drawer using web sockets. Allows you to draw a random card
 and each person currently visiting website will have it updated. 
 Written in Flask using Flask-SocketIO.
-If you want to try it out I host it [here.](http://cards.antoniszczepanik)
+If you want to try it out I host it [here.](http://cards.antoniszczepanik.com)
 
 Unable to find a basic sharable card drawer during COVID-19 pandemic I decided to
 write one myself.
